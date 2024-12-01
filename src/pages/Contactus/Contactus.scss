@@ -1,0 +1,97 @@
+
+
+.contact-form-main{
+    .contact-form-left{
+        padding: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: var(--card-border-radius);
+        .address{
+            .all-partners{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
+                .email{
+                    padding: 3px 0;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        line-height: 0;
+                        margin-left: 0px;
+                        margin-right: 8px;
+                    }
+
+                }
+                .phone{
+                    padding: 3px 0;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        line-height: 0;
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+        }
+        .all-partners{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 25px;
+            .contact-info{
+                border-radius: var(--card-border-radius);
+                padding: 15px;
+                .name{
+                    padding: 3px 0;
+                }
+                .email{
+                    padding: 3px 0;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        line-height: 0;
+                        margin-left: -2px;
+                        margin-right: 8px;
+                    }
+
+                }
+                .phone{
+                    padding: 3px 0;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        line-height: 0;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .contact-form-right{
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            &.message{
+                min-height: 150px;
+            }
+        }
+    }
+}
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}

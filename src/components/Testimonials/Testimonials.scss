@@ -1,0 +1,24 @@
+.testimonial-slider {
+  line-height: 0;
+
+  .testimonial-card {
+    // margin-right: 40px; // Added space between cards
+    position: relative;
+    padding: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: var(--card-border-radius);
+
+
+    .testimonial-imgs {
+      width: 250px;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-image {
+      width: 150px;
+      height: 150px;
+      border-radius: var(--card-border-radius);
+
+    }
+  }
+}

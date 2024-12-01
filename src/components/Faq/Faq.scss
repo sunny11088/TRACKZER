@@ -1,0 +1,64 @@
+.faq-main{
+    .accordion{
+        border: none !important;
+    }
+}
+
+.custom-accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: var(--card-border-radius);
+    background-color: rgba(164, 164, 164, 0.1);
+  
+    &.accordion__item--expanded {
+    background-color: rgba(164, 164, 164, 0.1);
+      .custom-accordion-button {
+        background-color: transparent;
+      }
+    }
+  
+    &:not(.accordion__item--expanded) .custom-accordion-button {
+        background-color: rgba(164, 164, 164, 0.1);
+    }
+  
+    .custom-accordion-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 25px 25px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      border-radius: var(--card-border-radius);
+  
+      &:hover {
+        background-color: rgba(164, 164, 164, 0.1);
+      }
+  
+      &::after {
+        content: '▼'; // Arrow icon
+        font-size: 14px;
+        transform: rotate(0deg);
+        transition: transform 0.3s;
+      }
+    }
+  
+    &.accordion__item--expanded .custom-accordion-button::after {
+      transform: rotate(180deg); // Rotate arrow for expanded state
+    }
+  
+    .accordion__panel {
+      padding: 22px 25px 25px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: -1px;
+      text-align: left;
+    }
+  }
+  
+
+
+  

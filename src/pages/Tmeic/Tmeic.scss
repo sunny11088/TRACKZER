@@ -1,0 +1,22 @@
+.about-us-inner{
+  .tech-details{
+    margin: 10px 0;
+  }
+  .we-have{
+    margin: 30px 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 30px;
+      .number-of{
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        border-radius: var(--border-radius);
+      }
+  }
+}
